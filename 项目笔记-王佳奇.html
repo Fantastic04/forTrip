@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+项目第一天：
+	18号
+		计划：1、18号晚上搞定模板的原理，然后搭建模板
+			2、静态页面，
+				主页{
+					1.self---ok
+					2.主页左侧----ok
+					3.搜索页面----共有的部分样式放在reset里面，还有一个就是独立的搜索结果展示页面
+					4.我的页面--登录--登录成功   -----ok   但是没做注册和登录界面
+				}
+	19号
+		计划：静态页面：
+				商城（最世界）{
+					1.self
+					2.点击目的地出现的二级页面。
+					3.搜索页面
+					4.发现--我的---ok 和首页的我的是一样的。
+					5.购物页面
+				}
+				结伴{
+					1.self;
+					2.点击题目的二级页面
+				}
+	20号	
+		静态页面补充+模板化
+	21号
+		js添加
+	22号
+		js添加
+	
+	模板结构：
+		1.index。html结构
+			{
+				正常页面结构，js引入angular、angular-ui-router、angular-css以及必备的js，此外就是主路由app.js和各个一级页面的js。
+				需要注意的是a标签的写法，在标签内部 赋属性值ui-sref，值就是对应的页面代号。
+				还有一点要在html或者body里面添加模板名称ng-app
+				还有一点就是要有一个div容器，作为类似container之类的容器。赋属性名ui-view.
+			}
+		2.app.js{这就是入口文件
+			angular.module('projectDemo',['ui.router','angularCSS',
+				'projectDemo.homePage',
+				'projectDemo.catePage',
+				'projectDemo.cartPage',
+				'projectDemo.minePage'])
+				以上projectdemo是模板名字.数组内是依赖模块。后面写的这些都是各个独立页面的js，这些js里都有各自的方法，且在index页面已经引入，所以这里可以获取到这些模块。
+				.config(function($stateProvider,$urlRouterProvider){
+				  	$urlRouterProvider.otherwise('/home')
+				  	配置路由，如果不是规定的路径，则显示home页面。
+				})
+			}
+		3.一级页面
+			正常写css。a标签跳转功能要写ui-sref="home等页面"。需要的情况则写ui-view;
+		4.主页home页路由配置
+			angular.module('projectDemo.homePage',[])
+				.config(function($stateProvider,$urlRouterProvider){
+				配置路由。
+				  $stateProvider
+				  .state({
+				    name:'home',
+				    url:'/home',
+				    css:'app/pages/home/home.css',
+				    templateUrl:'app/pages/home/home.html',
+				    controller:'homeCtrl'
+				   路由的原理是根据点击的a的ui-sref的值来确定要链接的路由的节点名字，然后搜寻路由配置里面stateProvider.state的name属性值如果相同就打开模板文件地址templateUrl。而url似乎没什么用。（name那个属性可以不写出来，直接在.state('name值'，{……})）
+				刚才又看了以下路由的原理，angular在加载的时候会对我们配置的路由进行实例化对象的创建，在我们点击有ui-sref的a标签等标签的时候 ，相当于触发了每个不同的实例。然后这些实例指向了state的具体url变化，然后由于url发生了变化，触发了哈希值变化函数，然后页面的ui-view进行重新渲染，渲染的就是state的template的模板位置，这里如果不是templateurl的话，不写url直接也可以在里面写html代码。
+				用ui-router的插件的方式写默认路由的方式是在config里面写上$urlRouterProvider，然后再里面写上$urlRouterProvider.otherwise("/").不用ng-route的原因是后者只能支持一级路由。不支持嵌套
+				
+
+重新过滤下模板的配置过程。做完和今早困倦了那么久，终于感觉清醒了一些：
+	1.进行主页html编写。几点注意的是：ng-app需要写，这是启动入口；然后引入必要的js文件和css样式，以及共有的html代码；在body里面写上必要的显示不同页面内容的渲染的容器。一般都是div即可，但是要记得写上属性ui-view。
+	2.启动入口文件配置。angular.mudule("你的ng-app的名字"，【依赖模块】).config(function($stateProvider,$urlRouterProvider){
+		$urlRouterProveder.otherwise('./home')
+		上面这句话是默认接口。
+	})
+	3.一级路由页面，以home为例。
+	前面都是一样的，配置里面要写上这个页面索要用到的各个路由配置。比如我的home是默认页，用了首页的footer，而首页 的footer里面有a标签，并有路由指向。在我home页加载时，我要在home页js里面写上home的加载配置。
+	.state({
+		这是home页本身的加载
+		name:"home",
+		url:'/home',
+		css:'html/home/home.css',
+		templateUrl:'html/home/home.html'
+	})
+	 .state({
+	 	这是home页里面的二级路由  .符号代表父子关系。
+	    name:'home.part1',
+	    url:'/part1',
+	    css:'html/home/home.css',
+	  	templateUrl:'html/home/homepart1/part1.html'
+	  })
+	因为home也有子路由，所以在home也html里要写上ui-view容器。
+	</body>
+</html>

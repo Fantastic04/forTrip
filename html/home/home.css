@@ -1,0 +1,267 @@
+@charset "utf-8";
+body{
+	background-color: #f3f4f4;
+}
+header{
+	height: 45px;
+	background-color: #2bab79;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+header .title:before{
+	content: '\EA3D';
+}
+header .title{
+	margin: 12px 10px;
+	width: 75px;
+	height: 20px;
+	background: url(../../img/common/qy.png) 0 no-repeat;
+	background-size: 100% 100%;
+}
+.title-mine{
+	margin-top: 5px;
+	margin-right: 15px;
+	font-size: 14px;
+	display: inline-block;
+	height: 30px;
+	padding-left: 40px;
+	line-height: 30px;
+	background-size: auto 100%;
+	background: url(../../img/icon/icon-mine.jpg)left center no-repeat;
+	background-size: auto 100%;
+}
+.swiper-container{
+	position: relative;
+	width: 360px;
+	height: 200px;
+	overflow-x: hidden;
+	position: relative;
+}
+.swiper-wrapper{
+	height: 200px;
+	width: 720px;
+}
+.swiper-wrapper div{
+	float: left;
+}
+.swiper-container a{
+	display: inline-block;
+}
+.swiper-container img{
+	width: 360px;
+	height: 200px;
+}
+.search{
+	height: 52px;
+	border-bottom: 1px solid #e6e8ea;
+}
+.search-inp{
+	background: url(../../img/icon/icon-search.png) white 30px no-repeat;
+	border:1px solid #e6e8ea;
+	background-size: 15px 15px;
+	height: 34px;
+	width: 342px;
+	display: block;
+	padding-left: 50px;
+	margin:9px auto;
+}
+/*nav*/
+nav{
+	padding:10px 0;
+	height: 160px;
+	width: 360px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+nav div{
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+	margin: 10px 10px 0px;
+}
+nav div span{
+	display: inline-block;
+}
+nav div span:first-of-type{
+	display: block;
+	width: 30px;
+	margin: 0 auto;
+}
+nav div span:first-of-type img{
+	width: 30px;
+	height: 30px;
+	margin-top: 7px;
+}
+nav div span:last-of-type{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	color: white;
+}
+/*最世界商城*/
+.shop{
+	background-color: white;
+	border: 1px solid #e6e8ea;
+	position: relative;
+	overflow: hidden;
+}
+.shop h3,.trip-article h3{
+	height: 50px;
+	line-height: 50px;
+	color: #656669;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px solid #e6e8ea;
+}
+.shop h3 span,.trip-more{
+	position: absolute;
+	top: auto;
+	right: 10px;
+	padding-right: 15px;
+	background: url(../../img/icon/icon-more2.jpg)right no-repeat;
+	color: #25d9b2;
+}
+.shop-superbuy{
+	float: left;
+	width: 37.5%;
+	height: 220px;
+	background-color: #f3f4f4;
+	padding: 0 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.shop-superbuy a{
+	display: inline-block;
+}
+.shop-superbuy a img{
+	width: 123px;
+	height: 82px;
+	margin-top: 10px;
+}
+.shop-menu{
+	float: left;
+	width: 62.5%;
+	height: 220px;
+	border: 1px solid #e6e8ea;
+	border-top: none;
+}
+.shop-time{
+	text-align: center;
+	margin-top: 10px;
+}
+.shop-time span:not(.shop-icon){
+	display: inline-block;
+	width: 15px;
+	height: 20px;
+	background-color: black;
+	border-radius: 3px;
+	color: white;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+}
+.shop-superbuy p{
+	color: #9ea3ab;
+	margin-top: 10px;
+}
+.shop-superbuy .shop-buy{
+	display: block;
+	width: 115px;
+	height: 20px;
+	line-height: 20px;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+}
+.shop-superbuy .buy-out{
+	background-color: #c3c3c3;;
+}
+.shop-menu div{
+	float: left;
+	width: 50%;
+	height: 110px;
+	padding-left: 5px;
+	position: relative;
+}
+.shop-menu div img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.shop-menu div:nth-child(-n+2){
+	border-bottom: 1px solid #e6e8ea;
+}
+.shop-menu div:nth-child(1),.shop-menu div:nth-child(4){
+	border-right:1px solid #e6e8ea;
+}
+.shop-menu div h3{
+	height: 31px;
+}
+.shop-menu div span{
+	color: #ced1d5;
+}
+
+/*游记与话题*/
+.trip-article{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: white;
+}
+.trip-show li>a{
+	display: inline-block;
+	margin: 5px 0;
+	width: 100%;
+	position: relative;
+	padding: 5px 10px ;
+}
+.trip-show li>a>img{
+	float: left;
+	width: 122px;
+	height: 82px;
+}
+.article-info{
+	float: left;
+	margin-left: 10px;
+}
+.article-info h4{
+	color: #9ea3ab;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.article-info div img:first-of-type{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.article-info div img:last-of-type{
+	width: 12px;
+	height: 12px;
+	margin-left: 5px;
+}
+.article-info div{
+	color: #ced1d5;
+}
+.commit-number{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	padding-left: 15px;
+	background: url(../../img/icon/icon-commit.jpg)left center no-repeat;
+	color: #e6e8ea;
+	line-height: 16px;
+}
+.article-more{
+	width: 95%;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid #e6e8ea;
+}
+

@@ -1,0 +1,113 @@
+.mine{
+	background-color: ;
+}
+header{
+	height: 44px;
+	background-color: #2bab79;
+	display: flex;
+	padding: 0 10px;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+header .menu-green{
+	background: url(../../img/icon/icon-menu.jpg);
+	background-size: 100% 100%;
+	width: 27px;
+	height: 27px;
+}
+.to-index{
+	background: url(../../img/common/qy.png);
+	width: 77px;
+	height: 24px;
+	background-size: 100% 100%;
+}
+header .mail-green{
+	background: url(../../img/icon/icon-mail.jpg);
+	background-size: 100% 100%;
+	width: 27px;
+	height: 27px;
+}
+.mine-pic{
+	padding: 40px;
+	height: 156px;
+	background: url(../../img/bg-user.png);
+	background-size: 100% 100%;
+	text-align: center;
+	position: relative;
+}
+.mine-pic img{
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+.mine-pic p {
+	z-index: 3;
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.mine-pic p .username{
+	color: white;
+	font-size: 16px;
+	border-right: 1px solid white;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+.quit-log{
+	color: white;
+}
+.mine-menu{
+	padding-top: 10px;
+	background-color: #F5F5F5;
+}
+.mine-menu li{
+	height: 55px;
+	background-color: white;
+	margin-bottom: 2px;
+	position: relative;
+}
+.mine-menu li a{
+	display: inline-block;
+	padding: 15px 0;
+	padding-left: 50px;
+	font-size: 16px;
+	width: 100%;
+}
+.mine-menu li p{
+	margin-top: 10px;
+	color: #9ea3ab;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 10px;
+}
+.manage{
+	margin: 10px 0px;
+}
+.mine-menu .right{
+	float: right;
+	background: url(../../img/icon/icon-right.jpg);
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+.mine-menu li>span{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 25px;
+	height: 25px;
+	background: url(../../img/icon/icons-ucenter.png);
+	background-size: 100% auto;
+}
+.mine-menu li:nth-of-type(1)>span{background-position: 0px 0px;}
+.mine-menu li:nth-of-type(2)>span{background-position: 0px -55px;}
+.mine-menu li:nth-of-type(3)>span{background-position: 0px -114px;}
+.mine-menu li:nth-of-type(4)>span{background-position: left -170px;}
+.mine-menu li:nth-of-type(5)>span{background-position: left -229px;}
+.mine-menu li:nth-of-type(6)>span{background-position: left -289px;}
+.mine-menu li:nth-of-type(7)>span{background-position: left -350px;}

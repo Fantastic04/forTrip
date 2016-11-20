@@ -1,0 +1,10 @@
+angular.module('project.partner',[])
+.config(function($stateProvider,$urlRouterProvider){
+$stateProvider
+.state({
+    name:'partner',
+    url:'/partner',
+    css:'html/partner/partner.css',
+    templateUrl:'html/partner/partner.html'
+})
+})

@@ -1,0 +1,40 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+ul,ol,dl,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+body,html{
+	height: 100%;
+}
+.bottom-black::after{
+	content: "";
+	left: 0;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background:linear-gradient(to bottom,transparent,gray,black)no-repeat;
+	opacity: 0.4;
+}
+/*下面是图标字体库，有时间研究下*/
+@font-face {font-family: 'iconfont'
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
