@@ -1,0 +1,43 @@
+@charset "utf-8";
+*{
+	box-sizing:border-box;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	/*font-family: "微软雅黑";*/
+}
+body,nav,dl,dt,dd,p,h1,h2,h3,h4,ul,ol,li,input,button,textarea,footer{margin:0;padding:0}
+body{-webkit-text-size-adjust: none;}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#1a1a1a}
+a:hover, a:active, a:focus{color:#1c5aa2;text-decoration: none;}
+a:active{color:#aaa;}
+img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-size:100%; vertical-align:middle;outline:none;}
+textarea{resize:none}
+button,input[type="button"],input[type="reset"],input[type="submit"] {cursor:pointer;-webkit-appearance:button;-moz-appearance:button}
+input:focus:-moz-placeholder,input:focus::-webkit-input-placeholder {color:transparent}
+button::-moz-focus-inner,input::-moz-focus-inner { padding:0; border:0}
+table { border-collapse:collapse; border-spacing:0}
+.ellipsis { white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+.break { word-break:break-all; word-wrap:break-word}
+header, footer, article, section, nav, menu, hgroup {display: block;clear:all;}
+.bottom-black::after{
+	content: "";
+	left: 0;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background:linear-gradient(to bottom,transparent,gray,black)no-repeat;
+	opacity: 0.4;
+}
+/*下面是图标字体库，有时间研究下*/
+@font-face {font-family: 'iconfont'
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}

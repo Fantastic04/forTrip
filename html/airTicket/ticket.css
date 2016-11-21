@@ -1,0 +1,376 @@
+.ticket-container{
+	width: 100%;
+	min-height: 683px;
+	background: #F5F5F5;
+}
+/*header*/
+.qui-header{
+	width: 100%;
+	height: 44px;
+	background: #2BAB79;
+	border-bottom: 1px solid #D9D9D7;
+}
+.qui-header p{
+	float: left;
+}
+.qui-header-menu{
+	width: 35%;
+	height: 100%;
+}
+.qui-menu-icon{
+	display: flex;
+	width: 44px;
+	height: 44px;
+	justify-content: center;
+	align-items: center;
+}
+.qui-header-logo{
+	width: 30%;
+	height: 100%;
+	text-align: center;
+}
+.qui-header-logo a img{
+	width: 77px;
+	height: 44px;
+}
+/*ticket-tab*/
+.ticket-tab{
+	 position: relative;
+}
+.ticket-menu{
+	width: 100%;
+	height: 44px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #E8E8E8;
+}
+.ticket-menu a{
+	width: 175px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	color: #444444;
+	position: relative;
+}
+.ticket-menu a:after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	display: block;
+	width: 8px;
+	height: 8px;
+	margin-left: -4px;
+	border-right: solid 1px #e6e8ea;
+	border-bottom: solid 1px #e6e8ea;
+	background: #fff;
+	transform: rotate(45deg);
+}
+.ticket-menu .singel:after{
+	display: none;
+}
+.ticketinfo-tab{
+	height: auto;
+	margin-top: 15px;
+	background: #fff;
+	border-top: 1px solid #E8E8E8;
+	padding: 0px 5px;
+	overflow: hidden;
+	position: relative;
+}
+.return-ticket{
+	width: 100%;
+	float: left;
+}
+.ticketinfo-tab ul{
+	position: relative;
+}
+.ticketinfo-tab ul li{
+	width: 100%;
+	border-bottom: 1px solid #E8E8E8;
+	padding-left: 10px;
+}
+.ticketinfo-tab ul li span{
+	display: inline-block;
+	margin-right: 5px;
+}
+.ticketinfo-tab ul li b{
+	font-weight: normal;
+}
+.ticketinfo-tab ul li i{
+	font-style: normal;
+}
+.from-city,.to-city{
+	height: 52px;
+}
+.from-city span,.to-city span{
+	font-size: 12px;
+	color: #4A4A4A;	
+	margin-top: 26px;   
+}
+.from-city b,.to-city b{
+	display: inline-block;
+	font-size: 20px;
+	color: #8dabbb;
+	margin-top: -10px !important;  
+}
+.go-time,.return-time{
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	height: 44px;
+}
+.go-time span,.return-time span{
+	color: #404040;
+	margin-right: 13px !important;
+}
+.go-time b,.return-time b{
+	color: #8dabbb;
+	font-size: 18px;
+	font-weight: bold !important;  
+}
+.more-option{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #9ea3ab;
+	font-size: 16px;
+	height: 44px;	
+}
+.more-option img{
+	width: 9px;
+	height: 4.5px;
+}
+.buyinfo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 48px;
+	position: absolute;
+	left: 0;
+	bottom: -48px;
+	display: none;
+}
+.buyinfo span{
+	font-size: 12px;
+	color: #444;
+	width: 60px;
+	height: 32px;
+	line-height: 32px;
+} 
+.buyinfo .jian{
+	width: 15px;
+	height: 3px;
+}	
+.buyinfo .add{
+	width: 15px;
+	height: 14px;
+}
+.buyinfo input{
+	width: 61px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 24px;
+	color: #444;
+	text-align: center;
+	border: none;
+}
+.oneway-ticket{
+	width: 100%;
+	display: none;
+	float: left;
+}
+.change{
+	width: 48px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	z-index: 10;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.change img{
+	width: 24px;
+	height: 24px;
+}
+.search-ticket{
+	padding: 15px 15px 0px 15px;
+}
+.search-ticket input{
+	width: 100%;
+	font-size: 14px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	padding: 0 18px;
+	overflow: visible;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	background: #2bab79;
+}
+/*data-apply*/
+.data-apply{
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 9px;
+	text-align: center;
+	font-size: 9px;
+	color: #444;
+	line-height: 22px;
+}
+.data-apply img{
+	width: 95px;
+	height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
