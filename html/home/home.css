@@ -76,6 +76,14 @@ nav{
 	flex-wrap: wrap;
 	overflow: hidden;
 }
+nav.showAll{
+	height: 260px;
+}
+nav.showAll div:last-of-type{
+}
+nav.showAll div.first-more{
+	display: none;
+}
 nav div{
 	width: 60px;
 	height: 60px;

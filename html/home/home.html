@@ -1,3 +1,4 @@
+<div ng-controller="home">
 <header>
 	<span class="title"></span>
 	<span class="title-mine"><span class="title-pic"></span>我的</span>
@@ -27,7 +28,7 @@
 	<div style="background-color: #ffa071;"><span class="icon"><img src="img/icon/icon-host.jpg"></span><span class="name" style="background-color: #f88f5a;">酒店</span></div>
 	
 	<div style="background-color: #fcca00;"><span class="icon"><img src="img/icon/icon-play.jpg"></span><span class="name" style="background-color: #e7b900;">会玩</span></div>
-	<div style="background-color: #ced1d5;"><span class="icon icon-up"><img src="img/icon/icon-more.jpg"></span><span class="name" style="background-color: #b0b2b4;">更多</span></div>
+	<div  ng-click="showNav()" style="background-color: #ced1d5;" class="first-more"><span class="icon icon-up"><img src="img/icon/icon-more.jpg"></span><span  style="background-color: #b0b2b4;">更多</span></div>
 	<div style="background-color: #b993ff;"><span class="icon"><img src="img/icon/icon-fly.jpg"></span><span class="name" style="background-color: #ab7dff;">机票</span></div>
 	
 	<div style="background-color: #ffbd56;"><span class="icon"><img src="img/icon/icon-good.jpg"></span><span class="name" style="background-color: #d2922f;">穷游锦囊</span></div>
@@ -125,4 +126,5 @@
 		</li>
 	</ul>
 	<h3 class="article-more">展开更多</h3>
+</div>
 </div>
