@@ -69,7 +69,7 @@ header .title{
 /*nav*/
 nav{
 	padding:10px 0;
-	height: 160px;
+	/*height: 160px;*/
 	width: 360px;
 	display: flex;
 	justify-content: space-around;
