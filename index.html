@@ -8,18 +8,45 @@
 		<meta name="keywords" content="穷游网，最世界，一站式，旅行套餐，旅行社区">
 		<meta name="description" content="穷游网，最世界，一站式旅行套餐购物模式和完善的旅者社区平台，给你最完善的旅行服务与资讯">
 		<link rel="stylesheet" href="lib/reset.css" />
-	    <script src="lib/jquery.js"></script>
+		<link rel="stylesheet" href="lib/swiper-3.4.0.min.css" />
 		<script src="lib/angular.min.js"></script>
 		<script src="lib/angular-ui-router.js"></script>
 		<script src="lib/angular-css.js"></script>
 	</head>
-	<body>
-		 
-		<div ui-view id="key"></div>
+	<body  ng-controller="home">
+		<div class="asideDiv">
+		 <aside>
+			<ul>
+				<section>
+					<div class="mine-aside-info">
+						<img src="img/icon/icon-mine.jpg" />
+						<p class="mine-aside-username">卡拉不定是条狗<br/><span></span></p>
+					</div>
+					<input type="text" class="mine-aside-search"/>
+					<span></span>
+				</section>		
+				<li><a><span></span>首页</a></li>
+				<li><a><span></span>目的地</a></li>
+				<li><a><span></span>行程助手</a></li>
+				<li><a><span></span>穷游锦囊</a></li>
+				<li><a><span></span>最世界·自由行</a></li>
+				<li><a><span></span>问答</a></li>
+				<li><a><span></span>论坛</a></li>
+				<li><a><span></span>穷游出品</a></li>
+				<li><a><span></span>酒店</a></li>
+				<li><a><span></span>机票</a></li>
+				<li class="second-li"><a><span></span>写点评</a></li>
+				<li><a><span></span>提问题</a></li>
+				<li><a><span></span>退出登录</a></li>
+			</ul>
+		</aside>
+		</div>
+		<div ui-view id="container" ng-click="asideHide()"></div>
 	    <script src="app.js"></script>
-	    <script src="lib/swiper.jquery.min.js"></script>
+	    <script src="lib/swiper-3.4.0.min.js"></script>
 	    <script src="html/home/home.js"></script>
 	    <script src="html/partner/partner.js"></script>
 	    <script src="html/shop/shop.js"></script>
+	    <script src="html/home/mine.js"></script>
 	</body>
 </html>

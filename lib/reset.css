@@ -20,6 +20,7 @@ body{
 body,html{
 	height: 100%;
 }
+input,button,select,textarea{outline:none}
 .bottom-black::after{
 	content: "";
 	left: 0;
@@ -37,4 +38,112 @@ body,html{
     url('iconfont.woff') format('woff'), /* chrome、firefox */
     url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+#container{
+	position: absolute;
+	width: 100%;
+	transition: left 1s linear;
+	left: 0;
+}
+.asideDiv{
+	transition: left 1s linear;
+}
+aside{
+	background-color: #2d3741;
+	border: 1px solid black;
+}
+aside section{
+	height: 120px;
+	padding: 10px;
+	position: relative;
+}
+.mine-aside-info{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.mine-aside-info img{
+	width: 54px;
+	height: 54px;
+	margin-right: 10px;
+	border-radius: 50%;
+	float: left;
+}
+.mine-aside-info p{
+	float: left;
+	color: white;
+	font-size: 16px;	
+	line-height: 20px;
+}
+.mine-aside-info p span{
+	margin-top: 10px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url(../img/icon/icon-mail-black.jpg);
+}
+.asideDiv{
+	overflow: hidden;
+	z-index: 999;
+	width: 250px;
+	position: fixed;
+	left: -250px;
+	top: 0;
+}
+aside section input{
+	height: 28px;
+	width: 100%;
+	background: #9ea3ab;
+	color: #fff;
+	padding: 4px 10px 4px 35px;
+	border-radius: 4px;
+	border: none;
+}
+aside section>span{
+	position: absolute;
+	left: 15px;
+	bottom: 20px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon/icon-search-white.jpg);
+	background-size: 100% 100%;
+}
+aside li {
+	background-color: #36424b;
+	border-top: 1px solid #232d34;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 50px;
+	position: relative;
+}
+aside li a{
+	font-size: 16px;
+	color: #ced1d5;
+}
+aside .second-li{
+	margin-top: 10px;
+}
+aside li span{
+	display:inline-block;
+	width:20px;
+	height: 20px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+aside li:first-of-type span{background: url(../img/icon/icon-b-index.jpg);}
+aside li:nth-of-type(2) span{background: url(../img/icon/icon-b-dest.jpg);}
+aside li:nth-of-type(3) span{background: url(../img/icon/icon-b-plan.jpg);}
+aside li:nth-of-type(4) span{background: url(../img/icon/icon-b-book.jpg);}
+aside li:nth-of-type(5) span{background: url(../img/icon/icon-b-shop.jpg);}
+aside li:nth-of-type(6) span{background: url(../img/icon/icon-b-ques.jpg);}
+aside li:nth-of-type(7) span{background: url(../img/icon/icon-b-form.jpg);}
+aside li:nth-of-type(8) span{background: url(../img/icon/icon-b-ours.jpg);}
+aside li:nth-of-type(9) span{background: url(../img/icon/icon-b-hotel.jpg);}
+aside li:nth-of-type(10) span{background: url(../img/icon/icon-b-fly.jpg);}
+aside li:nth-of-type(11) span{background: url(../img/icon/icon-b-commit.jpg);}
+aside li:nth-of-type(12) span{background: url(../img/icon/icon-b-question.jpg)}
+aside li:nth-of-type(13) span{b                                                                                                                                                animation-delayackground: url(../img/icon/icon-b-quit.jpg);}
+aside li:nth-child(n+12){
+	background-color: #2d3741;
+	border-top: 1px solid #232d34;
 }

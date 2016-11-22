@@ -1,20 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
-	<link rel="stylesheet" href="mine.css" />
-	<link rel="stylesheet" href="../../lib/reset.css" />
-</head>
-<body>
+	<div ng-controller='mine' id="container">
 	<header>
-		<span class="menu-green"></span>
+		<span class="menu-green" ng-click="showAside()"></span>
 		<a class="to-index" ui-sref></a>
 		<span class="mail-green"></span>
 	</header>
 	<div class="mine-pic bottom-black">
-		<img src="../../img/icon/icon-mine-big.png"/>
+		<img src="img/icon/icon-mine-big.png"/>
 		<p><span class="username">卡拉不定是条狗</span><span class="quit-log">退出登录</span></p>
 	</div>
 	<ul class="mine-menu">
@@ -39,12 +30,10 @@
 		<li class="manage"><span></span>
 			<a ui-sref>账号与密码管理<span class="right"></span></a>
 		</li>
-		
 		<li>
 			<p>
 				2004-2015 © 穷游网™ qyer.com All rights reserved.
 			</p>
 		</li>
 	</ul>
-</body>
-</html>
+	</div>

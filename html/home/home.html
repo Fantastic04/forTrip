@@ -1,7 +1,7 @@
-<div ng-controller="home">
-<header>
-	<span class="title"></span>
-	<span class="title-mine"><span class="title-pic"></span>我的</span>
+<div >
+<header ng-click="showAside()">
+	<span class="title"></span> 
+	<span class="title-mine" ui-sref="mine"><span class="title-pic"></span>我的</span>
 </header>
 <!--轮播图-->
 <div class="swiper-container bottom-black">
@@ -34,7 +34,7 @@
 	<div style="background-color: #ffbd56;"><span class="icon"><img src="img/icon/icon-good.jpg"></span><span class="name" style="background-color: #d2922f;">穷游锦囊</span></div>
 	<div style="background-color: #9bde26;"><span class="icon"><img src="img/icon/icon-jne.jpg"></span><span class="name" style="background-color: #8cce1a;">JNE</span></div>
 	<div style="background-color: #25d986;"><span class="icon"><img src="img/icon/icon-partner.jpg"></span><span class="name" style="background-color: #17c776;">结伴</span></div>
-	<div style="background-color: #ced1d5;"><span class="icon icon-up"><img src="img/icon/icon-up.jpg"></span><span class="name" style="background-color: #b0b2b4;">收起</span></div>
+	<div ng-click='hideNav()' style="background-color: #ced1d5;"><span class="icon icon-up"><img src="img/icon/icon-up.jpg"></span><span class="name" style="background-color: #b0b2b4;">收起</span></div>
 </nav>
 
 <div class="shop">
