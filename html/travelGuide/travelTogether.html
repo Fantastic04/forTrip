@@ -1,4 +1,4 @@
-
+	<div ng-controller="travelTogether">
 		<section class="qui-page1">
 			<!--header-->
 			<header class="qui-header">
@@ -34,10 +34,10 @@
 				<!--tab-->
 			<div class="tabWrap">
 				<ul class="qui-nav">
-					<li class="hotText">
-						<a>全部</a>
+					<li ng-click="showall()" class="all">
+						<a class="chooseNow">全部</a>
 					</li >
-					<li class="weekText">
+					<li ng-click="shomajor()" class="essen">
 						<a>精华</a>
 					</li>
 				</ul>
@@ -163,7 +163,7 @@
 						<ul class="tabList">
 							<li class="tabListItems">
 								<a href="">
-								<span>[讨论]</span>
+								<span>[1讨论]</span>
 								【穷游提醒】警惕钓鱼网站，慎重约伴出行！[置顶]&nbsp;
 								</a>
 							</li>
@@ -286,4 +286,4 @@
 				</p>
 			</div>
 		</section>
-	
+	</div>

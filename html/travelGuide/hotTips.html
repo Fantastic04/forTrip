@@ -1,12 +1,14 @@
-
+	<div ng-controller="hotTips">
 		<section class="qui-page">
 			<!--header-->
 			<header class="qui-header">
 				<p class="qui-header-menu">
-					<span class="qui-menu-icon"></span>
+					<span class="qui-menu-icon">
+						<img src="img/common/more2.jpg"/>
+					</span>
 				</p>
 				<p class="qui-header-logo">
-					<a href="">
+					<a ui-sref="home">
 						<img src="http://common1.qyerstatic.com/mbbs/basic/images/topbar-logo.png"/>
 					</a>
 				</p>
@@ -14,17 +16,17 @@
 			<!--tab-->
 			<div class="tabWrap">
 				<ul class="qui-nav">
-					<li class="hotText">
-						<a>热门话题</a>
+					<li ng-click="showHotText()" class="hotText">
+						<a class="chooseNow">热门话题</a>
 					</li >
-					<li class="weekText">
+					<li ng-click="showWeekText()" class="weekText">
 						<a>一周内热帖</a>
 					</li>
 				</ul>
 				<div class="qui-tabContent">
 					<div class="hotTips">
 						<ul class="tabList clear">
-							<li class="tabListItems"><a href="">【娜娜出品】环行巴尔干，炫彩狂想曲——（克罗地亚+黑山+波黑15天，5万字+1000图）</a></li>
+							<li class="tabListItems"><a href="">【娜娜哈哈】环行巴尔干，炫彩狂想曲——（克罗地亚+黑山+波黑15天，5万字+1000图）</a></li>
 							<li class="tabListItems"><a href="">【娜娜出品】环行巴尔干，炫彩狂想曲——（克罗地亚+黑山+波黑15天，5万字+1000图）</a></li>
 							<li class="tabListItems"><a href="">【娜娜出品】环行巴尔干，炫彩狂想曲——（克罗地亚+黑山+波黑15天，5万字+1000图）</a></li>
 							<li class="tabListItems"><a href="">【娜娜出品】环行巴尔干，炫彩狂想曲——（克罗地亚+黑山+波黑15天，5万字+1000图）</a></li>
@@ -200,10 +202,8 @@
 					<a href="">APP</a>
 				</p>
 			</div>
-			<!--JFDK-->
-			<div>测试</div>
 		</section>
-		
+	</div>	
 		
 		
 		

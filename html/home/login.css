@@ -1,0 +1,227 @@
+.container{
+	height: 100%;
+}
+header{
+	height: 44px;
+	background-color: rgba(0, 0, 0, .1);
+	display: flex;
+	padding: 0 10px;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+header .back{
+	background: url(../../img/icon/icon-left.jpg);
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-size: 100% 100%;
+}
+header span{
+	color: white;
+	line-height: 34px;
+}
+header span:nth-of-type(2){
+	line-height: 24px;
+	font-size: 16px;
+}
+header span:last-of-type{
+	height: 26px;
+	padding:5px 10px;
+	border: 1px solid white;
+	border-radius: 3px;
+	line-height: 14px;
+	font-size: 12px;
+}
+body{
+	background: linear-gradient(-30deg, #16B769 0, #03B087 100%);
+}.login-menu{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.login-menu span{
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	height: 40px;
+	margin-top: 40px;
+	border-bottom: 1px solid white;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+}
+.login-info{
+	padding:15px 10px;
+}
+.login-name,.login-phone{
+	width: 320px;
+	margin: 0 auto;
+}
+.login-name div,.login-phone div{
+	display: inline-block;
+	border: none;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 320px;
+	height: 40px;
+	font-size: 0px;
+}
+.login-name div span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size: 100% 100%;
+	float: left;
+}
+.login-name div:first-of-type span{
+	background: url(../../img/icon/icon-username-green.jpg)
+}
+.login-name div:last-of-type span{
+	background: url(../../img/icon/icon-pwd-green.jpg)
+}
+.login-name div input{
+	width: 280px;
+	height: 100%;
+	border: none;
+	padding-left: 10px;
+	color: white;
+	background-color: rgba(255, 255, 255, .2);
+}
+.login-name div:first-of-type{
+	background: url(../../img/icon/icon-username-green.jpg)middle center no-repeat;
+	background-size: 20px 20px;
+}
+.login-name div:last-of-type{
+	background: url(../../img/icon/icon-pwd-green.jpg)middle center no-repeat;
+	background-size: 20px 20px;
+}
+.login-name>span{
+	line-height: 20px;
+	text-align: right;
+	float: right;
+	color: white;
+}
+.login{
+	height: 40px;
+	margin-left: 10px;
+	width: 320px;
+	display:block;
+	margin-top: 60px;
+	background-color: white;
+	color: #0CBF79;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 3px;
+	border: none;
+}
+.login-name{
+	height: 100px;
+	display: none;
+}
+.login-phone{
+	height: 100px;
+	/*display: none;*/
+}
+.login-menu span.chooseNow{
+	font-weight: bold;
+	border-bottom: 2px solid white;
+}
+.login-method{
+	width: 100%;
+	text-align: center;
+}
+.login-method span{
+	color: white;
+	height: 16px;
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+.login-method span:first-of-type{
+	text-align: right;
+	padding-right: 20px;
+	border-right: 1px solid white;
+}
+.login-method span:last-of-type{
+	text-align: left;
+	padding-left: 20px;
+}
+.login-third{
+	margin-top: 80px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.login-third p{
+	font-size: 16px;
+}
+.login-third span{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	margin: 10px 10px;
+	border-radius: 50%;
+}
+.login-third .login-qq{
+	background: url(../../img/icon/icon-qq.jpg);
+}
+.login-third .login-weibo{
+	background: url(../../img/icon/icon-weibo.jpg);
+}
+.login-phone div{
+	rgba(255, 255, 255, .2)
+}
+.login-phone div div{
+	width: 320px;
+}
+.login-phone div div:first-of-type{
+	background: rgba(255, 255, 255, .2);
+}
+.login-phone div div:first-of-type span{
+	display: inline-block;
+	width: 70px;
+	text-align:center;
+	color: white;
+	border-right:1px solid white;
+}
+.login-phone div div:first-of-type input{
+	background: none;
+	color:white;
+	border: none;
+	padding-left: 10px;
+	height: 40px;
+	width: 250px;
+}
+.login-phone div div:last-of-type span:first-of-type{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../../img/icon/icon-pwd-green.jpg);
+	background-size: 100% 100%;
+	float: left;
+}
+.login-phone div div:last-of-type input{
+	background: rgba(255, 255, 255, .2);
+	width: 165px;
+	margin-right: 10px;
+	height: 40px;
+	float: left;
+	border: none;
+	color:white;
+}
+.login-phone input::-webkit-input-placeholder{
+	color: white;
+	opacity: 0.4;
+}
+.login-testImg{
+	margin-left: 10px;
+	width: 95px;
+	height: 40px;
+	background-color: white;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: blue;
+	font-weight: bold;
+}

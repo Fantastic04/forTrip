@@ -1,0 +1,92 @@
+aside{
+	background-color: #2d3741;
+	border: 1px solid black;
+	width: 250px;
+}
+aside section{
+	height: 120px;
+	padding: 10px;
+	position: relative;
+}
+.mine-aside-info{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.mine-aside-info img{
+	width: 54px;
+	height: 54px;
+	margin-right: 10px;
+	border-radius: 50%;
+	float: left;
+}
+.mine-aside-info p{
+	float: left;
+	color: white;
+	font-size: 16px;	
+	line-height: 20px;
+}
+.mine-aside-info p span{
+	margin-top: 10px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url(../../img/icon/icon-mail-black.jpg);
+}
+aside section input{
+	height: 28px;
+	width: 100%;
+	background: #9ea3ab;
+	color: #fff;
+	padding: 4px 10px 4px 35px;
+	border-radius: 4px;
+	border: none;
+}
+aside section>span{
+	position: absolute;
+	left: 15px;
+	bottom: 20px;
+	width: 20px;
+	height: 20px;
+	background: url(../../img/icon/icon-search-white.jpg);
+	background-size: 100% 100%;
+}
+aside li {
+	background-color: #36424b;
+	border-top: 1px solid #232d34;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 50px;
+	position: relative;
+}
+aside li a{
+	font-size: 16px;
+	color: #ced1d5;
+}
+.second-li{
+	margin-top: 10px;
+}
+li span{
+	display:inline-block;
+	width:20px;
+	height: 20px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+li:first-of-type span{background: url(../../img/icon/icon-b-index.jpg);}
+li:nth-of-type(2) span{background: url(../../img/icon/icon-b-dest.jpg);}
+li:nth-of-type(3) span{background: url(../../img/icon/icon-b-plan.jpg);}
+li:nth-of-type(4) span{background: url(../../img/icon/icon-b-book.jpg);}
+li:nth-of-type(5) span{background: url(../../img/icon/icon-b-shop.jpg);}
+li:nth-of-type(6) span{background: url(../../img/icon/icon-b-ques.jpg);}
+li:nth-of-type(7) span{background: url(../../img/icon/icon-b-form.jpg);}
+li:nth-of-type(8) span{background: url(../../img/icon/icon-b-ours.jpg);}
+li:nth-of-type(9) span{background: url(../../img/icon/icon-b-hotel.jpg);}
+li:nth-of-type(10) span{background: url(../../img/icon/icon-b-fly.jpg);}
+li:nth-of-type(11) span{background: url(../../img/icon/icon-b-commit.jpg);}
+li:nth-of-type(12) span{background: url(../../img/icon/icon-b-question.jpg)}
+li:nth-of-type(13) span{background: url(../../img/icon/icon-b-quit.jpg);}
+li:nth-child(n+12){
+	background-color: #2d3741;
+	border-top: 1px solid #232d34;
+}

@@ -19,4 +19,16 @@ angular.module('project.home',[])
     css:'html/home/home.css',
     templateUrl:'html/home/homepart2/part2.html'
   })
-})
+ 
+  }) 
+  .controller("home",function($scope){
+  	$scope.showNav=function(){
+  		var nav = document.querySelector('nav');
+  		nav.className='showAll';
+		}
+		$scope.hideNav=function(){
+			var nav = document.querySelector('nav')
+			nav.className='';
+		}
+  })
+

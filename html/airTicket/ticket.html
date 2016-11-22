@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/ticket.css"/>
-	</head>
-	<body>
+	<div ng-controller="ctrl">
 		<section class="ticket-container">
 			<!--header-->
 			<header class="qui-header">
 				<p class="qui-header-menu">
 					<span class="qui-menu-icon">
-						<img src="../../img/more2.jpg"/>
+						<img src="img/common/more2.jpg"/>
 					</span>
 				</p>
 				<p class="qui-header-logo">
-					<a href="">
+					<a ui-sref="home">
 						<img src="http://common1.qyerstatic.com/mbbs/basic/images/topbar-logo.png"/>
 					</a>
 				</p>
@@ -25,8 +16,8 @@
 			<!--ticket-tab-->
 			<form class="ticket-tab">
 				<div class="ticket-menu">
-					<a class="return">往返机票</a>
-					<a class="singel">单程机票</a>
+					<a ng-click='showreturn()' class="return chooseNow">往返机票</a>
+					<a ng-click='showsingel' class="singel">单程机票</a>
 				</div>
 				<div class="ticketinfo-tab">
 					<div class="return-ticket">
@@ -40,11 +31,11 @@
 								<b>请输入到达城市</b>
 							</li>
 							<li class="go-time">
-								<span>去程日期</span>
+								<span style="font-size: 12px;">去程日期</span>
 								<b>2016-11-19</b>
 							</li>
 							<li class="return-time">
-								<span>返程日期</span>
+								<span style="font-size: 12px;">返程日期</span>
 								<b>2016-11-22</b>
 							</li>
 							<li class="more-option">
@@ -70,7 +61,7 @@
 								<b>请输入到达城市</b>
 							</li>
 							<li class="go-time">
-								<span>去程日期</span>
+								<span style="font-size: 12px;">去程日期</span>
 								<b>2016-11-19</b>
 							</li>
 							<li class="more-option">
@@ -96,32 +87,16 @@
 			</form>
 			<!--data-apply-->
 			<div class="data-apply">
-				<p>数据支持</p>
+				<p style="font-size: 9px;">数据支持</p>
 				<img src="http://static.qyer.com/m/project/flight/images/new/copyright.jpg"/>
 			</div>
+			<div class="footer">
+				<p>2004-2015&copy;穷游网qyer.com All rights reserved.</p>
+				<p>
+					<a href="">手机版</a>
+					<a href="">电脑版</a>
+					<a href="">APP</a>
+				</p>
+			</div>
 		</section>
-		
-			
-	</body>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</html>
+	</div>	
