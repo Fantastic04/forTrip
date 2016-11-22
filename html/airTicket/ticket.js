@@ -11,32 +11,32 @@ angular.module('project.ticket',[])
 
 .controller("ctrl",function($scope){
 	//点击hotText让hotTips显示，weekTips隐藏
-	$scope.showHotText = function () {
-		var hotTips = document.querySelector(".hotTips");
-		var weekTips = document.querySelector(".weekTips");
-		var after = document.querySelector(".hotText a");
-		var deleteafter = document.querySelector(".weekText a");
+	$scope.showreturn = function () {
+		var returns = document.querySelector(".return-ticket");
+		var oneway = document.querySelector(".oneway-ticket");
+		var after = document.querySelector(".return");
+		var deleteafter = document.querySelector(".singel");
 		after.className = "chooseNow";
 		after.style.color = "#2BAB79";
 		deleteafter.className ="";
 		deleteafter.style.color = "#444444";
 		after.style.display = "block";
-		hotTips.style.display = "block";
-		weekTips.style.display = "none";
+		returns.style.display = "block";
+		oneway.style.display = "none";
 	}
 	
 	//点击weekText让weekTips显示，hotTips隐藏
-	$scope.showWeekText = function () {
-		var hotTips = document.querySelector(".hotTips");
-		var weekTips = document.querySelector(".weekTips");
-		var after = document.querySelector(".weekText a");
-		var deleteafter = document.querySelector(".hotText a");
+	$scope.showsingel = function () {
+		var returns = document.querySelector(".return-ticket");
+		var oneway = document.querySelector(".oneway-ticket");
+		var after = document.querySelector(".singel");
+		var deleteafter = document.querySelector(".return");
 		after.className = "chooseNow";
 		after.style.color = "#2BAB79";
 		deleteafter.className ="";
-			deleteafter.style.color = "#444444";
+		deleteafter.style.color = "#444444";
 		after.style.display = "block";
-		hotTips.style.display = "none";
-		weekTips.style.display = "block";
+		returns.style.display = "none";
+		oneway.style.display = "block";
 	}
 })
