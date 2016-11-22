@@ -4,21 +4,21 @@ ul,ol{list-style:none;}
 a{color: #666;text-decoration:none;}
 input,button,select,textarea{outline:none}
 
-.page-shop{
+.page-shop .shop-box{
 	width: 100%;
 	background-color: #f5f5f5;
 }
-.page-shop header{
+.page-shop .shop-box header{
 	width: 100%;
 	background:linear-gradient(to left,#0fbfa6,#4fc971);
 }
-.page-shop header .logo{
+.page-shop .shop-box header .logo{
 	width: 100%;
 	height:1.25rem;
 	display: flex;
 	align-items:center;
 }
-.page-shop header .logo>span{
+.page-shop .shop-box header .logo>span{
 	width: 15%;
 	height: 100%;
 	font-size:1.111111rem;
@@ -26,19 +26,19 @@ input,button,select,textarea{outline:none}
 	line-height:0.972222rem;
 	color: #fff;
 }
-.page-shop header .logo>p{
+.page-shop .shop-box header .logo>p{
 	width: 85%;
 	height: 100%;
 	display: flex;
 	justify-content:center;
 	align-items:center;
 }
-.page-shop header .logo>p img{
+.page-shop .shop-box header .logo>p img{
 	width: 35%;
 	height: 55%;
 	margin-right: 0.972222rem;
 }
-.page-shop header .list{
+.page-shop .shop-box header .list{
 	width: 80%;
 	height: 2.5rem;
 	margin-left: 10%;
@@ -46,35 +46,35 @@ input,button,select,textarea{outline:none}
 	align-items:center;
 	justify-content:space-between;
 }
-.page-shop header .list a{
+.page-shop .shop-box header .list a{
 	width: 22%;
 	height: 100%;
 	font-size: 0.416667rem;
 	color: #fff;
 }
-.page-shop header .list a dl{
+.page-shop .shop-box header .list a dl{
 	width: 100%;
 	height: 100%;
 }
-.page-shop header .list a dl dt{
+.page-shop .shop-box header .list a dl dt{
 	width: 100%;
 	height: 65%;
 	display: flex;
 	align-items:center;
 	justify-content:center;
 }
-.page-shop header .list a dl dt img{
+.page-shop .shop-box header .list a dl dt img{
 	width: 1.361111rem;
 	height: 1.361111rem;
 }
-.page-shop header .list a dl dd{
+.page-shop .shop-box header .list a dl dd{
 	width: 100%;
 	height: 35%;
 	display: flex;
 	align-items:center;
 	justify-content:center;
 }
-.page-shop .seek{
+.page-shop .shop-box .seek{
 	width: 100%;
 	height: 1.722222rem;
 	background-color: #fff;
@@ -83,7 +83,7 @@ input,button,select,textarea{outline:none}
 	justify-content:center;
 	border-bottom:1px solid #ececec; 
 }
-.page-shop .seek>div{
+.page-shop .shop-box .seek>div{
 	width: 90%;
 	height: 50%;
 	border-radius: 0.416667rem;
@@ -94,19 +94,19 @@ input,button,select,textarea{outline:none}
 	font-size: 0.416667rem;
 	color: #949494;
 }
-.page-shop .seek>div img{
+.page-shop .shop-box .seek>div img{
 	width: 0.555556rem;
 	height: 0.555556rem;
 	margin: 0 0.277778rem;
 }
-.page-shop .main{
+.page-shop .shop-box .main{
 	width: 100%;
 	background-color: #fff;
 	font-size: 0.416667rem;
 	color: #636363;
 	padding-bottom: 0.555556rem;
 }
-.page-shop .main .nav{
+.page-shop .shop-box .main .nav{
 	width: 100%;
 	height: 1.25rem;
 	border-bottom: 1px solid #ececec;
@@ -115,7 +115,7 @@ input,button,select,textarea{outline:none}
 	justify-content:center;
 	margin-bottom: 0.555556rem;
 }
-.page-shop .main .nav>p{
+.page-shop .shop-box .main .nav>p{
 	width: 48%;
 	height: 100%;
 	display: flex;
@@ -123,61 +123,66 @@ input,button,select,textarea{outline:none}
 	justify-content:center;
 	position: relative;
 }
-.page-shop .main .nav>p>span{
+/*.page-shop .shop-box .main .nav>p>span{
 	width: 100%;
 	height: 2px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	background-color: #16c1a0;
+}*/
+.active{
+	background-color: #16c1a0;
 }
-.page-shop .main .picture{
+.page-shop .shop-box .main .picture{
 	width: 96%;
 	margin-left: 2%;
-
 }
-.page-shop .main .picture a{
+
+.page-shop .shop-box .main .picture a{
 	display: block;
 	width: 100%;
 	height: 3.194444rem;
 	margin-bottom: 0.277778rem;
 }
-.page-shop .main .picture a img{
+.page-shop .shop-box .main .picture a img{
 	width: 100%;
 	height: 100%;
 }
-.page-shop .main .picture .both{
+.page-shop .shop-box .main .picture .both{
 	display: flex;
 	align-items:center;
 	justify-content:space-between;
 	margin-bottom: 0;
 }
-.page-shop .main .picture .both img{
+.page-shop .shop-box .main .picture .both img{
 	width: 48.5%;
 	height: 90%;
 }
 
-.page-shop .footer{
+.page-shop .shop-box .part1Footer{
 	margin-top: 0.416667rem;
 	width: 100%;
 	height: 1.666667rem;
+	margin-bottom: 50px;
 }
-.page-shop .footer p:nth-of-type(1){
+.page-shop .shop-box .part1Footer p:nth-of-type(1){
 	width: 100%;
 	font-size: 0.333333rem;
 	color: #b2b6bc;
 	display: flex;
 	justify-content:center;
 }
-.page-shop .footer p:nth-of-type(2){
+.page-shop .shop-box .part1Footer p:nth-of-type(2){
 	display: flex;
 	justify-content:center;
 	margin-top: 0.222222rem;
 }
-.page-shop .footer p:nth-of-type(2) a{
+.page-shop .shop-box .part1Footer p:nth-of-type(2) a{
 	margin:0 0.555556rem;
 	font-size: 0.361111rem;
 }
-.page-shop .footer p:nth-of-type(2) a:nth-of-type(1){
+.page-shop .shop-box .part1Footer p:nth-of-type(2) a:nth-of-type(1){
 	color: #b2b6bc;
 }
+

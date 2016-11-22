@@ -1,0 +1,42 @@
+.indexfooter{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height:50px;
+	border-top: 1px solid #d8d8d8;
+	background-color: #fff;
+}
+.indexfooter a{
+	width: 25%;
+	height: 100%;
+}
+.indexfooter a dl{
+	width: 100%;
+	height: 100%;
+}
+.indexfooter a dl dt{
+	width: 100%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.indexfooter a dl dt img{
+	width: 100%;
+	height: 100%;
+	width: 21px;
+	height: 21px;
+}
+.indexfooter>a>dl>dd{
+	width: 100%;
+	height: 40%;
+	font-size: 15px;
+	color: #747474;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}

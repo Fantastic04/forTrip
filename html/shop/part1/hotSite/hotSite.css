@@ -1,0 +1,21 @@
+
+ .hotSite a{
+	display: block;
+	width: 100%;
+	height: 3.194444rem;
+	margin-bottom: 0.277778rem;
+}
+ .hotSite a img{
+	width: 100%;
+	height: 100%;
+}
+ .hotSite .both{
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-bottom: 0;
+}
+ .hotSite .both img{
+	width: 48.5%;
+	height: 90%;
+}
