@@ -1,10 +1,12 @@
-<div class="page-shop">
+	<div class="page-shop">
+		<div class="shop-box">
 		<header>
 			<div class="logo">
 				<span>≡</span>
 				<p><img src="img/shop/logo.png"></p>
 				
 			</div>
+			
 			<div class="list">
 				<a href="">
 					<dl>
@@ -31,6 +33,7 @@
 					</dl>
 				</a>
 			</div>
+		
 			<div class="list">
 				<a href="">
 					<dl>
@@ -68,36 +71,15 @@
 
 		<div class="main">
 			<div class="nav">
-				<p>热门目的地<span></span></p>
-				<p>全部国家<span></span></p>
+				<p ui-sref="Sindex.part1.hotSite" ui-sref-active="active">热门目的地<span></span></p>
+				<p ui-sref="Sindex.part1.allState" ui-sref-active="active">全部国家<span></span></p>
 			</div>
-			<div class="picture">
-				<a href=""><img src="img/shop/destination-01.jpg"></a>
-				<a href=""><img src="img/shop/destination-02.jpg"></a>
-				<a href="" class="both">
-					<img src="img/shop/destination-03.jpg">
-					<img src="img/shop/destination-04.jpg">
-				</a>
-				<a href="" class="both">
-					<img src="img/shop/destination-05.jpg">
-					<img src="img/shop/destination-06.jpg">
-				</a>
-				<a href="" class="both">
-					<img src="img/shop/destination-07.jpg">
-					<img src="img/shop/destination-08.jpg">
-				</a>
-				<a href="" class="both">
-					<img src="img/shop/destination-09.jpg">
-					<img src="img/shop/destination-10.jpg">
-				</a>
-				<a href="" class="both">
-					<img src="img/shop/destination-11.jpg">
-					<img src="img/shop/destination-12.jpg">
-				</a>
+			<div ui-view class="picture">
+				
 			</div>
 		</div>
 
-		<div class="footer">
+		<div class="part1Footer">
 			<p>2004-2015&copy;穷游网™qyer.com All rights reserved.</p>
 			<p>
 				<a href="">手机版</a>
@@ -105,8 +87,4 @@
 				<a href="">APP</a>
 			</p>
 		</div>
-
-		<div class="bottomNav">
-			
-		</div>
-	</div>
+		

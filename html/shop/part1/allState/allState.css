@@ -1,0 +1,35 @@
+*{padding: 0;margin: 0;}
+body{font:normal 0.2885rem "微软雅黑";box-sizing: border-box;background-color: #efefef;font-size: 0;}
+ul,ol{list-style:none;}
+a{color: #666;text-decoration:none; font-size: 0.416667rem}
+input,button,select,textarea{outline:none}
+
+.allState{
+	width: 90%;
+	margin-left: 5%;
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+}
+.allState>.country-list{
+	width: 100%;
+	margin-top: 0.277778rem;
+}
+.allState h3{
+	font-size: 0.555556rem;
+	height:1.388889rem;
+	display: flex;
+	align-items: center;
+}
+.allState>.country-list>.list-contents{
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content:space-between;
+}
+.allState>.country-list>.list-contents>.country-title{
+	width: 50%;
+	height: 0.833333rem;
+}
